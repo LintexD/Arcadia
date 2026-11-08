@@ -1,0 +1,20 @@
+[package]
+name = "arcadia-render"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+arcadia-core = { path = "../arcadia-core" }
+arcadia-world = { path = "../arcadia-world" }
+arcadia-physics = { path = "../arcadia-physics" }
+glam.workspace = true
+bytemuck.workspace = true
+wgpu.workspace = true
+winit.workspace = true
+log.workspace = true
+
+[dev-dependencies]
+pollster.workspace = true
+
+[lints]
+workspace = true

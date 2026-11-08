@@ -1,0 +1,31 @@
+[package]
+name = "arcadia-app"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "arcadia_app"
+path = "src/lib.rs"
+
+[[bin]]
+name = "arcadia"
+path = "src/main.rs"
+
+[dependencies]
+arcadia-core = { path = "../arcadia-core" }
+arcadia-world = { path = "../arcadia-world" }
+arcadia-physics = { path = "../arcadia-physics" }
+arcadia-render = { path = "../arcadia-render" }
+glam.workspace = true
+rayon.workspace = true
+wgpu.workspace = true
+winit.workspace = true
+pollster.workspace = true
+env_logger.workspace = true
+log.workspace = true
+egui.workspace = true
+egui-winit.workspace = true
+egui-wgpu.workspace = true
+
+[lints]
+workspace = true

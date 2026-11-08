@@ -1,0 +1,13 @@
+[package]
+name = "arcadia-physics"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+arcadia-core = { path = "../arcadia-core" }
+arcadia-world = { path = "../arcadia-world" }
+bytemuck.workspace = true
+glam.workspace = true
+
+[lints]
+workspace = true

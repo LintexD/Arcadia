@@ -1,0 +1,13 @@
+[package]
+name = "arcadia-world"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+arcadia-core = { path = "../arcadia-core" }
+glam.workspace = true
+bytemuck.workspace = true
+rayon.workspace = true
+
+[lints]
+workspace = true
